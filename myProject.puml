@@ -1,0 +1,21 @@
+@startuml
+
+interface PhoneInterface
+interface Moveable
+
+Phone <|-- PhoneInterface
+
+class Phone {
+    String model
+    String screenType
+}
+
+class SapphirePhone extends Phone {
+    makeACall()
+    touchMenu()
+    connectWireless()
+}
+class Truck
+class Vehicle
+
+@enduml
